@@ -5,10 +5,14 @@
     color: #359756;
 }
 .testimonial-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 40px;
+    position: relative;
+}
+.slide-show {
+    width: 2400px;
+    display: flex;
     margin: 0 auto;
+    transform: translateX(0); /* Initial translateX value */
+    transition: transform 0.3s ease;
 }
 
 .testimonial {
@@ -18,6 +22,8 @@
     padding: 60px 40px 10px;
     border-radius: 10px;
     background-color: #f2f2f2;
+    width: 350px;
+    margin-left: 40px;
 }
 
 img.profile-pic {
@@ -46,3 +52,11 @@ img.profile-pic {
     font-size: medium;
     font-weight: 300;
 }
+
+.slider-buttons {
+    position: absolute;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,26 +1,27 @@
 var slideShow = document.querySelector('.slide-show');
-var decreasebtn = document.querySelector('.btn-decrease');
-var increasebtn = document.querySelector('.btn-increase');
+var rightbtn = document.querySelector('.btn-right');
+var leftbtn = document.querySelector('.btn-left');
 var translateXValue = 0;
+leftbtn.disabled=true;
 
-decreasebtn.addEventListener('click', function() {
+rightbtn.addEventListener('click', function() {
     translateXValue -= 400; // Adjust the value as desired
     slideShow.style.transform = 'translateX(' + translateXValue + 'px)';
-    if(translateXValue <= -2000) {
-        decreasebtn.disabled=true;
+    if(translateXValue <= -1600) {
+        rightbtn.disabled=true;
     }
     if(translateXValue < 0) {
-        increasebtn.disabled=false;
+        leftbtn.disabled=false;
     }
 });
 
-increasebtn.addEventListener('click', function() {
+leftbtn.addEventListener('click', function() {
     translateXValue += 400; // Adjust the value as desired
     slideShow.style.transform = 'translateX(' + translateXValue + 'px)';
     if(translateXValue >= 0) {
-        increasebtn.disabled=true;
+        leftbtn.disabled=true;
     }
-    if(translateXValue > -2000) {
-        decreasebtn.disabled=false;
+    if(translateXValue > -1600) {
+        rightbtn.disabled=false;
     }
 });

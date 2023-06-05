@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
 body {
     margin: 0;
 }
@@ -7,26 +9,26 @@ body {
 }
 
 .hero-image-container {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 800px;
 }
 
 .hero-image {
  width: 100%;
  height: 800px;
- object-fit: contain;
-}
-
-.hero-content-container {
-    position: absolute;
-    z-index: 2;
-    top: 300px;
-    left: 100px;
 }
 
 .hero-content-container {
     color: #f2f2f2;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    width: 40%;
+    top: 300px;
+    left: 40px;
 }
 
 .hero-content-heading {
@@ -37,7 +39,6 @@ body {
 
 .hero-content-text {
     font-size: larger;
-    width: 500px;
 
 }
 
@@ -65,8 +66,18 @@ body {
     z-index: 2;
     width: 100%
   }
+.header-logo {
+    margin: 5px;
+}
+.logo-image {
+    width: 87px;
+}
 .header .navigation-bar {
     width: 70%;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header .navigation-bar .nav-items {
@@ -78,4 +89,8 @@ body {
 
 .nav-item {
     list-style-type: none;
+ }
+
+ .nav-item a {
+    color: #f2f2f2;
  }

@@ -1,0 +1,94 @@
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75rem;
+    text-align: center;
+    color: #F4BB44;
+}
+.testimonials-section {
+    margin-top: 40px;
+}
+.testimonial-container {
+    position: relative;
+    width: 1450px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide-show {
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+    transform: translateX(0px); /* Initial translateX value */
+    transition: opacity 600ms, transform 0.7s ease;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px 10px;
+    border-radius: 10px;
+    background-color: #F4BB44;
+    width: 350px;
+    margin-left: 40px;
+    flex-shrink: 0;
+}
+
+img.profile-pic {
+    width: 80px;
+    border-radius: 50% 50%;
+    height: 80px;
+    border: white solid 5px;
+}
+
+.testimonial .content {
+    padding-top: 60px;
+    text-align: center;
+    font-family: Roboto;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.name {
+    color: #3E497A;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.designation {
+    color: #808080;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.slider-buttons {
+    position: absolute;
+    transform: translateY(-300px);
+    display: flex;
+    width: 100%;
+}
+
+.slider-buttons button {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-left {
+     left: 20px;
+}
+
+.btn-right {
+    right: 20px;
+}
+
+.slider-buttons button i {
+   font-size:50px;
+   color: #f4bb44
+}
+
+.slider-buttons button.disabled i {
+    color: #EADDCA;
+}
